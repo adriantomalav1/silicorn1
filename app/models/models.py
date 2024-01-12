@@ -209,3 +209,4 @@ class CampaignSegment(BaseModel):
     segment = relationship("Segment")
 
 Base.metadata.create_all(bind=engine)
+
