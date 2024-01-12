@@ -6,7 +6,7 @@ class SenderDTO(BaseModel):
     name: str
     email: str
     domain: str
-    variables: dict
+    variables: Optional[dict] = None
 
 class AddSenderDTO(BaseModel):
     name: str
