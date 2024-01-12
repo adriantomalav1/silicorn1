@@ -76,7 +76,7 @@ eb_policy_attach = aws.iam.RolePolicyAttachment("eb-policy-attach",
 
 instance_profile = aws.iam.InstanceProfile("eb-ec2-instance-profile", role=instance_profile_role.name)
 
-conn = pulumi.Output.all(rds.address, db_password).apply(lambda out: f"mysql+mysqlconnector://root@localhost:3316/silicorn")
+conn = pulumi.Output.all(rds.address, db_password).apply(lambda out: f"mysql+mysqlconnector://root@localhost:3306/silicorn")
 
 eb_app = aws.elasticbeanstalk.Application("test-deploy", description="Testing FastAPI app deployment")
 
