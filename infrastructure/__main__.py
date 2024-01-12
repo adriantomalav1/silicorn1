@@ -111,4 +111,5 @@ eb_env = aws.elasticbeanstalk.Environment("Test-deploy-env",
         ),
     ])
 
+
 pulumi.export('connection_string', conn)
