@@ -39,7 +39,6 @@ class UnprocessedCompany(BaseModel):
     city = Column(String(255), nullable=True)
     yearly_revenue = Column(String(255), nullable=True)
     phone = Column(String(50), nullable=True)
-    ceo_id = Column(String(12), nullable=True)
     source = Column(String(25), nullable=True)
 
 class UnprocessedContact(BaseModel):
