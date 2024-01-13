@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - cd /var/app/current  # Change the working directory to /var/app/current
+      - source ../venv/staging-LQM1lest/bin/activate
+      - alembic upgrade head  # Run the Alembic command
+      - deactivate
+artifacts:
+  files: '**/*'
