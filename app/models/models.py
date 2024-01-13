@@ -207,5 +207,10 @@ class CampaignSegment(BaseModel):
     campaign = relationship("Campaign")
     segment = relationship("Segment")
 
+class Test(BaseModel):
+    __tablename__ = "tests"
+
+    test_col = Column(Integer, nullable=True)
+
 Base.metadata.create_all(bind=engine)
 
