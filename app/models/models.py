@@ -211,6 +211,7 @@ class Test(BaseModel):
     __tablename__ = "tests"
 
     test_col = Column(Integer, nullable=True)
+    new_col = Column(Integer, nullable=True)
 
 Base.metadata.create_all(bind=engine)
 
