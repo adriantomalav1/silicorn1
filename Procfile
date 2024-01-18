@@ -1,1 +1,1 @@
-web: ./setup.sh
+web: alembic upgrade head; uvicorn application:app
