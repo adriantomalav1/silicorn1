@@ -1,1 +1,1 @@
-web: uvicorn application:app
+web: ./setup.sh
